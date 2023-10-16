@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="media(max-width: 768px)" href="./css/draft1.css">
+    <title>Document</title>
+    <style>
+        
+        @media screen and (max-width: 350px) {
+            body {
+            background-color: lightgreen;
+            }
+        }
+        
+        @media screen and (min-width: 800px) {
+            body {
+            background-color: lavender;
+            }
+        }
+        #container {
+            background: #555;
+            display: flex;
+            flex-wrap: wrap;
+            /* Хэвтээ тэнхлэгийн дагуу */
+            justify-content: space-evenly;
+            /*
+                Зэрэгцүүлэлтийн сонголтууд
+                flex-start
+                flex-end
+                center
+                space-between
+                space-around
+             */
+             height: 600px;
+             /* Босоо тэнхлэгийн дагуу */
+             align-items: baseline;
+            /*
+                Зэрэгцүүлэлтийн сонголтууд
+                flex-start
+                flex-end
+                center
+                base-line
+                stretch
+            */
+            /* Itemuudiig bosoo tenkhlegiin daguu zeregtsuulen */
+            align-content: space-evenly;
+            /*
+                Зэрэгцүүлэлтийн сонголтууд
+                flex-start
+                flex-end
+                center
+                space-between
+                space-around
+            */
+        }
+        .item{
+            background: #f4f4f4;
+            border: #ccc solid 1px;
+            padding: 1rem;
+            text-align: center;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0.5rem;
+            flex-basis: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-3">item 3</div>
+    </div>
+</body>
+</html>

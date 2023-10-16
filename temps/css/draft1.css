@@ -1,0 +1,16 @@
+
+/* Media Queries */
+
+/* Tables */
+@media screen and (max-width: 768px){ 
+  #container{
+    background:yellow;
+  }
+}
+
+/* Mobiles */
+@media screen and (min-width: 480px){ 
+  footer{
+    background: yellow;
+  }
+}
